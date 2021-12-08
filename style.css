@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-left: 5%;
+}
+
+
+#github, #linkedin {
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+    padding-top: 10%;
+}
