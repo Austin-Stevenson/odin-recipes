@@ -1,14 +1,130 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding-left: 5%;
+*,
+*::before,
+*::after {
+  
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-family: "cinzel", serif;
 }
 
+body {
+  background-color: #85dcb8;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 1rem;
+  border: black;
+  border-style: solid;
+}
+
+.content>iframe {
+  align-self: center;
+}
+
+a, .card>a>li {
+    color: #41B3D3;
+    text-decoration:none; 
+}
+
+h3>a:hover {
+    color:#26635b; 
+    cursor:pointer;  
+
+}
+
+h1 ,h3 {
+    margin: 0;
+}
+
+.recipes {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.card {
+    display: flex;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #E8A87C;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+.card>a>li {
+      text-align: center;
+      font-weight: 900;
+  }
+
+.card:hover {
+    text-decoration:none; 
+    cursor:pointer;  
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    background-color: rgb(233, 155, 104);
+    transition: 0.2s;
+  }
+
+.card-img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #github, #linkedin {
     height: 50px;
     width: 50px;
     margin: 0 15px;
-    padding-top: 10%;
+}
+
+
+.description, .ingredients, .instructions {
+  margin-top: 0.5rem;
+  background-color: #E8A87C;
+  width: fit-content;
+  border-radius: 0.1rem;
+  padding: 10px;
+  color: black;
+}
+
+.description>p {
+  margin: 0;
 }
